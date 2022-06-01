@@ -16,9 +16,7 @@ namespace ByPassingWindowsDefender
 
             for (int i = 0; i < buf.Length; i++)
             {
-
                 encoded[i] = (byte)(((uint)buf[i] ^ 0xAA) & 0xFF);
-
             }
             StringBuilder hex = new StringBuilder(encoded.Length * 2);
 
